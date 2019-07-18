@@ -1,6 +1,8 @@
+quicksort 50 million double point2d
+====================================
 
-c++ 5.2 sec
+gcc-9 5.2 sec
 
-swift 6.1 sec
+swift-5.0.2  6.1 sec
 
-d  8.3 sec
+d-2.087  8.3 sec
