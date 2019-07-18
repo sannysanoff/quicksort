@@ -1,0 +1,1 @@
+pc -O4 -OoFORCENOSTACKFRAME sort1.pas
