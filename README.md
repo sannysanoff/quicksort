@@ -1,6 +1,8 @@
 quicksort 50 million double point2d
 ====================================
 
+quicksort implemented manually same algorithm on same data structures.
+
 julia-1.1.1  5.03 sec
 
 gcc-9 5.2 sec
