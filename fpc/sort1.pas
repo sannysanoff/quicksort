@@ -29,6 +29,7 @@ begin
   b := c;
 end;
 
+
 function Partition(var arr: TA; low: Longint; high: Longint) : Longint;
 var
   pivot: ^Point;

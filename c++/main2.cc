@@ -10,26 +10,26 @@ using namespace std;
         double x, y;
     };
 
-    bool operator >(const P&x, const P&y) {
-        return x.x > y.x || (x.x == y.x && x.y > y.y);
+    bool operator <(const P&x, const P&y) {
+        return x.x < y.x || (x.x == y.x && x.y < y.y);
     }
     long long partition (P arr[], long long low, long long high)
     {
         P pivot = arr[high];    // pivot
-        long long i = (low - 1);  // Index of smaller element
+        long long i = low;  // Index of smaller element
 
         for (long long j = low; j <= high- 1; j++)
         {
             // If current element is smaller than or
             // equal to pivot
-            if (!(arr[j] > pivot))
+            if (arr[j] < pivot)
             {
-                i++;    // increment index of smaller element
                 std::swap(arr[i], arr[j]);
+                i++;    // increment index of smaller element
             }
         }
-        std::swap(arr[i + 1], arr[high]);
-        return (i + 1);
+        std::swap(arr[i], arr[high]);
+        return (i);
     }
 
 /* The main function that implements QuickSort
