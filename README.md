@@ -1,7 +1,7 @@
 quicksort 50 million double point2d
 ====================================
 
-julia-1.1.1  5.05 sec
+julia-1.1.1  5.03 sec
 
 gcc-9 5.2 sec
 
