@@ -4,13 +4,13 @@ quicksort 50 million double point2d
 quicksort implemented manually same algorithm on same data structures.
 |tool | time taken|
 ----------------------------
-|julia-1.1.1 | _5.03 sec_|
+|julia-1.1.1 | 5.03 sec|
 ------------------------
-|gcc-9 |5.2 _sec_|
+|gcc-9 |5.2 sec|
 -----------------------
-|swift-5.0.2  |_6.1 sec_|
+|swift-5.0.2  |6.1 sec|
 -----------------------
-|d-2.087  |_8.3 sec_|
+|d-2.087  |8.3 sec|
 ------------------
-|fpc-3.0.4 | _8.9 sec_|
+|fpc-3.0.4 | 8.9 sec|
 -----------------------
