@@ -8,6 +8,7 @@ tool | time taken
 -----|-----------
 julia-1.1.1 | 5.03 sec
 gcc-9 |5.2 sec
+ldc-llvm8 |5.47 sec
 swift-5.0.2  |6.1 sec
 dmd-2.087  |8.3 sec
 fpc-3.0.4 | 8.9 sec
