@@ -1,12 +1,13 @@
 import std.stdio;
 import core.time;
-import std.datetime.stopwatch;
+import std.datetime;
+//import std.datetime.stopwatch;
 import std.random;
 import std.algorithm.sorting;
 import std.algorithm.mutation;
 
 struct P { double a; double b; }
-alias myComp = (ref P x, ref P y) => x.a > y.a || x.a == y.a && x.b > y.b;
+bool myComp (ref P x, ref P y) { return  x.a > y.a || x.a == y.a && x.b > y.b; }
 
 
 long partition (P[] arr, long low, long high)
@@ -50,12 +51,16 @@ void main() {
     for(int q=0; q<n; q++) {
         arr ~= P(uniform(0.0f, 1.0f, rnd), uniform(0.0f, 1.0f, rnd));
     }
-    auto sw = StopWatch(AutoStart.no);
+   // auto sw = StopWatch(AutoStart.no);
     writeln("sorting..."); stdout.flush();
-    sw.start();
+    //sw.start();
 //    auto q = arr.sort!(myComp);
+    auto stattime = Clock.currTime();
     quickSort(arr, 0, arr.length-1);
-    sw.stop();
+    auto endttime = Clock.currTime();
+    auto duration = endttime - stattime;
+    //sw.stop();
+    writeln("==> ", duration);
 
-    writeln(sw.peek.total!"msecs");
+    //writeln(sw.peek.total!"msecs");
 }

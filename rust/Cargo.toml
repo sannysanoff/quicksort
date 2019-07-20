@@ -1,0 +1,9 @@
+[package]
+
+name = "main"
+version = "0.0.1"
+authors = ["San <san@sysdate.com>"]
+
+
+[dependencies]
+rand = "0.7.0"
