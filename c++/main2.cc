@@ -18,7 +18,7 @@ using namespace std;
         P pivot = arr[high];    // pivot
         long long i = low;  // Index of smaller element
 
-        for (long long j = low; j <= high- 1; j++)
+        for (long long j = low; j < high; j++)
         {
             // If current element is smaller than or
             // equal to pivot
@@ -51,13 +51,14 @@ using namespace std;
         }
     }
 
-    void test() {
-        const int N = 50000000;
+    void test(size_t N) {
+	    cout << "Started.." << endl;
         vector<P> a(N);
 
         for (int i = 0; i < N; i++) {
             a[i] = P { (double)rand()/RAND_MAX, (double)rand()/RAND_MAX };
         }
+	    cout << "Sorting.." << endl;
         chrono::steady_clock::time_point begin = chrono::steady_clock::now();
         quickSort(a.data(), 0, a.size()-1);
 
@@ -70,6 +71,14 @@ using namespace std;
 
 int main()
 {
-	test();
+	for(int i=0; i<100; i++) {
+		test(500000);
+	}
+	for(int i=0; i<20; i++) {
+		test(5000000);
+	}
+	for(int i=0; i<20; i++) {
+		test(50000000);
+	}
 //    return 0;
 }

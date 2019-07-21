@@ -1,0 +1,1 @@
+echo ERROR cannot build from command line. Thing is, if you build it from Intellij Rider in Release Mode, it produces twice better results than I could build with csc.exe from command line, because it goes through msbuild and it adds lots of keys, which I'm unable to analyze due to lack of need.
