@@ -3,6 +3,7 @@ using System.Diagnostics;
 
 using System.Globalization;
 using System.Runtime;
+using System.Runtime.CompilerServices;
 using System.Text;
 
 namespace ConsoleApp1
@@ -23,11 +24,12 @@ namespace ConsoleApp1
 
     class Program
     {
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         static bool Comp(MyPoint o1, MyPoint o2) {
             return o1.x < o2.x || o1.x == o2.x && o1.y < o2.y;
         }
         
-        static int Partition (MyPoint[] arr, int low,  int high)
+        static long Partition (MyPoint[] arr, long low,  long high)
         {
             var pivot = arr[high];    // pivot
             var i = low;  // Index of smaller element
@@ -37,9 +39,9 @@ namespace ConsoleApp1
             {
                 // If current element is smaller than or
                 // equal to pivot
-                q = arr[j];
-                if (Comp(q, pivot))
+                if (Comp(arr[j], pivot))
                 {
+                    q = arr[j];
                     arr[i] = arr[j];
                     arr[j] = q;
                     i++;    // increment index of smaller element
@@ -51,7 +53,7 @@ namespace ConsoleApp1
             return i;
         }
 
-        static void QuickSort(MyPoint[] arr, int low, int high) {
+        static void QuickSort(MyPoint[] arr, long low, long high) {
             if (low >= high) return;
             var pi = Partition(arr, low, high);
 
@@ -61,11 +63,10 @@ namespace ConsoleApp1
             QuickSort(arr, pi + 1, high);
         }
 
-
         static void Test(int N)
         {
             Random random = new Random();  
-            Console.WriteLine("Started with N=!"+N);
+            Console.WriteLine("Started!");
             MyPoint[] arr = new MyPoint[N];
             for (int i = 0; i < N; i++)
             {
