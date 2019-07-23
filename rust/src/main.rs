@@ -56,7 +56,7 @@ fn main() {
     for n in 0..N {
         arr[n] = Point{x:rng.gen(), y:rng.gen()};
     }
-    println!("sort!");
+    println!("sort {}!",N);
     let now = Instant::now();
     quick_sort(&mut arr[0..N], &compare);
     println!("sorted! time={}", now.elapsed().as_millis());

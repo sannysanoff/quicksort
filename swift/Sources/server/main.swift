@@ -47,13 +47,16 @@ func x() -> Void {
 
     let N = 50000000;
     var points: [Point] = [];
-    points.reserveCapacity(N);
+//    points.reserveCapacity(N);
     //print("\(DEPLOYMENT_RUNTIME_SWIFT)");
     do {
         let t1 = CFAbsoluteTimeGetCurrent();
+	//let r1 = 0...1.0;
         //let q = CFDataCreate;
+	print("Gen...")
         for _ in 0...N-1 {
-            points.append(Point(x: Double.random(in: 0...1), y: Double.random(in: 0...1)));
+            //points.append(Point(x: Double.random(in:r1), y: Double.random(in: r1)));
+            points.append(Point(x: drand48(), y: drand48()));
         }
         let t2 = CFAbsoluteTimeGetCurrent();
         print("Generated array, sec :\(t2 - t1)");

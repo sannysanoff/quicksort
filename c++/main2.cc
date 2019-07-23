@@ -71,10 +71,10 @@ using namespace std;
 
 int main()
 {
-	for(int i=0; i<100; i++) {
+	for(int i=0; i<10; i++) {
 		test(500000);
 	}
-	for(int i=0; i<20; i++) {
+	for(int i=0; i<3; i++) {
 		test(5000000);
 	}
 	for(int i=0; i<20; i++) {

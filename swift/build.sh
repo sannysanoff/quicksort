@@ -1,1 +1,1 @@
-swiftc -c -g -O -Ounchecked Sources/server/main.swift
+swiftc -O -Ounchecked Sources/server/main.swift
