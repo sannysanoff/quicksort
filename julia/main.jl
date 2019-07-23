@@ -1,4 +1,3 @@
-using StaticArrays
 
 struct P
     x::Float64
