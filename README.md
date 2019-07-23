@@ -12,6 +12,7 @@ gcc-9 or clang 8 |5.24 sec | + |clang and gcc show very similar results
 rust |5.39 sec | + | ..
 ldc-llvm8 |5.43 sec | + | LLVM backend for D
 .net core 2.2 unsafe |5.67 sec | + | ..
+gcc-go 9.1.0  |5.88 sec | + | ..
 java-graaalvm-packed | 6.0 sec |  | this has memory layout like in C, but non-idiomatic coding
 swift-5.0.2  |6.1 sec | + | .. 
 .net core 2.2 |6.40 sec | + | compiled release mode, no mono
