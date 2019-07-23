@@ -17,8 +17,8 @@ gcc-go 9.1.0  |5.52 sec | + | ..
 java-graaalvm-packed | 5.62 sec |  | this has memory layout like in C, but non-idiomatic coding
 .net core 2.2 |5.65 sec | + | compiled release mode, no mono
 swift-5.0.2  |5.76 sec | + | .. 
-go1.12.6 |gccgo+10% | + | ..
-dmd-2.087  |6.61 sec| + | canonical D, uninstalled it already due to conflict with gccgo
+go1.12.6 |gccgo+10% | + | ..uninstalled it already due to conflict with gccgo
+dmd-2.087  |6.61 sec| + | canonical D
 clang+graalvm  |6.97 sec | + | LLVM bytecode interpreted by graalvm
 fpc-3.0.4 | 8.34 sec | + | Free Pascal
 java-graaalvm-onheap | 14.4 sec |  | this has different memory layout, but idiomatic approach
