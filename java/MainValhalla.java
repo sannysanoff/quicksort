@@ -12,7 +12,7 @@ inline class MyPoint {
         this.y = y;
     }
 
-    public boolean lessThan(MyPoint? o) {
+    public boolean lessThan(MyPoint o) {
         if (this.x == o.x) {
             return this.y < o.y;
         } else {
