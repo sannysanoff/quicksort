@@ -3,7 +3,25 @@ quicksort 50 million double point2d
 
 quicksort implemented manually same algorithm on same data structures. Conformant are implementations in idiomatic code with same memory layout.
 
-everything is on my notebook; single user mode; single thread always caused 4-4.1 GHz.
+as run on google cloud n1-standard-2 (2 vCPUs, 7.5 GB memory) skylake cpu
+
+tool | time taken |  conforms? | comment
+-----|------------|----------|------
+clang 8 |7.630 sec | + |..
+julia-1.2.0 | 7.810 sec | + | ..
+gcc-8 |8.244 sec | + | ..
+rust |8.272 sec | + | ..
+ldc-1.8.0/llvm5 |8.460 sec | + | ..
+.net core 3.0 unsafe |8.995 sec | + | ..
+java-graaalvm-packed | 9.308 sec |  | this has memory layout like in C, but non-idiomatic coding
+.net core 3.0 safe |9.508 sec | + | ..
+gcc-go 8  |10.035 sec | + | ..
+java-valhalla | 11.203 | + | Java with structs!
+clang+graalvm  |11.863 sec | + | LLVM bytecode interpreted by graalvm
+fpc-3.0.4 | 13.592 sec | + | Free Pascal
+fbc-1.07.1 | 14.483 sec | + | Free Basic
+
+as run on my notebook; single user mode; single thread always caused 4-4.1 GHz.
 
 tool | time taken |  conforms? | comment
 -----|------------|----------|------
@@ -22,3 +40,6 @@ dmd-2.087  |6.61 sec| + | canonical D
 clang+graalvm  |6.97 sec | + | LLVM bytecode interpreted by graalvm
 fpc-3.0.4 | 8.34 sec | + | Free Pascal
 java-graaalvm-onheap | 14.4 sec |  | this has different memory layout, but idiomatic approach
+
+
+
