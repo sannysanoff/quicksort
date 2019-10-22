@@ -16,7 +16,7 @@ ldc-1.8.0/llvm5 |8.460 sec | + | ..
 java-graaalvm-packed | 9.308 sec |  | this has memory layout like in C, but non-idiomatic coding
 .net core 3.0 safe |9.508 sec | + | ..
 gcc-go 8  |10.035 sec | + | ..
-java-valhalla | 11.203 | + | Java with structs!
+java-valhalla | 11.094 | + | Java with structs!
 clang+graalvm  |11.863 sec | + | LLVM bytecode interpreted by graalvm
 fpc-3.0.4 | 13.592 sec | + | Free Pascal
 fbc-1.07.1 | 14.483 sec | + | Free Basic
