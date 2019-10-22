@@ -12,8 +12,8 @@ end
 function partition(arr, low, high)
     pivot = arr[high]
     i = low
-    @inbounds for j = low:high-1
-        if isless(arr[j], pivot)
+    for j = low:high-1
+        @inbounds if isless(arr[j], pivot)
             arr[i],arr[j] = arr[j],arr[i]
             i = i+1
         end

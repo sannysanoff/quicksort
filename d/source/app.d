@@ -44,6 +44,7 @@ void quickSort(P[] arr, long low, long high) {
 }
 
 void main() {
+    for(int z=0; z<10; z++) {
     P[] arr;
     auto rnd = Random(1000);
     writeln("generating..."); stdout.flush();
@@ -61,6 +62,7 @@ void main() {
     auto duration = endttime - stattime;
     //sw.stop();
     writeln("==> ", duration);
+   }
 
     //writeln(sw.peek.total!"msecs");
 }

@@ -41,6 +41,7 @@ func quickSort(arr []P)  {
 
 
 func main() {
+	for z := 0; z<10; z++ {
 	arr := []P{}
 	N := 50000000
 	println("gen...")
@@ -52,6 +53,7 @@ func main() {
 	quickSort(arr)
 	elapsed := time.Since(start)
 	log.Printf("Quicksort took %s", elapsed)
+	}
 
 }
 

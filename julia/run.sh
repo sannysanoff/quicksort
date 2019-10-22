@@ -1,2 +1,2 @@
-/usr/bin/julia main.jl
+julia main.jl
 

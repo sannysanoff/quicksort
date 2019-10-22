@@ -49,6 +49,7 @@ fn partition<T,F>(v: &mut [T], f: &F) -> usize
 // TEST
 fn main() {
     println!("begin!");
+    for q in 0..10 {
     let values = vec![Point{x:0.0,y:0.0}; N];
     let mut arr = values.into_boxed_slice();
     //let mut arr : [Point; N] = [Point{x:0.0,y:0.0};N];
@@ -60,5 +61,6 @@ fn main() {
     let now = Instant::now();
     quick_sort(&mut arr[0..N], &compare);
     println!("sorted! time={}", now.elapsed().as_millis());
+    }
 
 }
