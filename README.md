@@ -18,8 +18,8 @@ java-graaalvm-packed | 9.308 sec |  | this has memory layout like in C, but non-
 gcc-go 8  |10.035 sec | + | ..
 java-valhalla | 11.094 | + | Java with structs!
 clang+graalvm  |11.863 sec | + | LLVM bytecode interpreted by graalvm
+fbc-1.07.1 | 13.230 sec | + | Free Basic, credits to @mabu
 fpc-3.0.4 | 13.592 sec | + | Free Pascal
-fbc-1.07.1 | 14.483 sec | + | Free Basic
 
 as run on my notebook; single user mode; single thread always caused 4-4.1 GHz.
 
