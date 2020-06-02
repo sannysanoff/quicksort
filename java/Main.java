@@ -5,10 +5,10 @@ import java.util.Collections;
 import java.util.Comparator;
 
 class MyPoint {
-    float x;
-    float y;
+    double x;
+    double y;
 
-    public MyPoint(float x, float y) {
+    public MyPoint(double x, double y) {
         this.x = x;
         this.y = y;
     }
@@ -18,7 +18,7 @@ public class Main {
 
     static Comparator<MyPoint> myPointComparator = (MyPoint o1, MyPoint o2) -> {
         if (o1.x == o2.x) {
-            return Float.compare(o1.y, o2.y);
+            return Double.compare(o1.y, o2.y);
         } else {
             return o1.x > o2.x ? 1 : -1;
         }
@@ -69,7 +69,7 @@ public class Main {
             ArrayList<MyPoint> doubles = new ArrayList<>();
             ArrayList<MyPoint> nax = new ArrayList<>();
             for (int i = 0; i < 50000000; i++) {
-                doubles.add(new MyPoint((float)Math.random(), (float)Math.random()));
+                doubles.add(new MyPoint((double)Math.random(), (double)Math.random()));
             }
             System.out.println("Sort...");
             MyPoint[] arr = doubles.toArray(new MyPoint[doubles.size()]);

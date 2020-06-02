@@ -3,6 +3,17 @@ quicksort 50 million double point2d
 
 quicksort implemented manually same algorithm on same data structures. Conformant are implementations in idiomatic code with same memory layout.
 
+as run on AMD Ryzen 3900X cpu with default cooler
+tool | time taken |  conforms? | comment
+-----|------------|----------|------
+julia-1.4.0 | 5.002 sec | + | ..
+clang 10 |5.230 sec | + |..
+gcc 9.2.1 |5.377 sec | + |..
+java-graaalvm-ee-packed | 5.660 sec |  | this has memory layout like in C, but non-idiomatic coding
+go1.14.2 |5.89 | + | 
+java-graaalvm-ce-packed | 6.155 sec |  | this has memory layout like in C, but non-idiomatic coding
+java-graaalvm-ce-onheap | 20.4 sec |  | this has different memory layout, but idiomatic approach
+
 as run on google cloud n1-standard-2 (2 vCPUs, 7.5 GB memory) skylake cpu
 
 tool | time taken |  conforms? | comment
