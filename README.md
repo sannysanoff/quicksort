@@ -32,7 +32,7 @@ clang+graalvm  |11.863 sec | + | LLVM bytecode interpreted by graalvm
 fbc-1.07.1 | 13.230 sec | + | Free Basic, credits to @mabu
 fpc-3.0.4 | 13.592 sec | + | Free Pascal
 
-as run on my notebook; single user mode; single thread always caused 4-4.1 GHz.
+as run on my notebook (Lenovo X1 Extreme i7-8850H); single user mode; single thread always caused 4-4.1 GHz.
 
 tool | time taken |  conforms? | comment
 -----|------------|----------|------
