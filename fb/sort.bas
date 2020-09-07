@@ -7,7 +7,7 @@ Declare Operator < (ByRef lhs As Point2d, ByRef rhs As Point2d)As Boolean
 
 Operator < (ByRef lhs As Point2d, ByRef rhs As Point2d)As Boolean
 
-        If lhs.x < rhs.x Or (lhs.x = rhs.x and lhs.y < rhs.y) Then
+If lhs.x < rhs.x OrElse (lhs.x = rhs.x AndAlso lhs.y < rhs.y) Then
                 Return True
         End If
 
