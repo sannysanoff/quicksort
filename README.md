@@ -14,7 +14,7 @@ gcc 9.2.1 |5.377 sec | + |..
 java-graaalvm-ee-packed | 5.660 sec |  | this has memory layout like in C, but non-idiomatic coding
 go1.14.2 |5.89 | + | 
 java-graaalvm-ce-packed | 6.155 sec |  | this has memory layout like in C, but non-idiomatic coding
-java-graaalvm-ce-onheap | 20.4 sec |  | this has different memory layout, but idiomatic approach
+java-graaalvm-ce-onheap | 20.4 sec | + | this has different memory layout, but idiomatic approach
 
 as run on google cloud n1-standard-2 (2 vCPUs, 7.5 GB memory) skylake cpu
 
@@ -52,7 +52,7 @@ go1.12.6 |gccgo+10% | + | ..uninstalled it already due to conflict with gccgo
 dmd-2.087  |6.61 sec| + | canonical D
 clang+graalvm  |6.97 sec | + | LLVM bytecode interpreted by graalvm
 fpc-3.0.4 | 8.34 sec | + | Free Pascal
-java-graaalvm-onheap | 14.4 sec |  | this has different memory layout, but idiomatic approach
+java-graaalvm-onheap | 14.4 sec | + | this has different memory layout, but idiomatic approach
 
 
 
