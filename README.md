@@ -5,14 +5,21 @@ quicksort implemented manually same algorithm on same data structures. Conforman
 
 The initial point of this benchmark is to intentionally give all possible advantage to C++ over Java, because Point2D cannot be layed out in canonic java without being indirectly addressed (i.e. only array of pointers).
 
+Benchmarking is done on the hardware du jour, by running program 2 times, for total 10 results and then choosing the best result.
+
 as run on Intel i5-11300H on boost frequency (around 4.1-4.2 GHz) on Redmibook Pro 15
+
 tool | time taken |  conforms? | comment
 -----|------------|----------|------
 clang 14 |4.596 sec | + |..
+julia 1.7.3 |4.713 sec | + |..
 gcc 11.2 |4.927 sec | + |..
-go1.18.2 |5.162 | + | ..
+go1.18.2 |5.162 sec | + | ..
+jdk15.0.2 |6.146 sec |   | non-idiomatic coding
+jdk15.0.2 |28+ sec | +  | idiomatic coding, indirect access
 
 as run on AMD Ryzen 3900X cpu with default cooler
+
 tool | time taken |  conforms? | comment
 -----|------------|----------|------
 julia-1.4.0 | 5.002 sec | + | ..
