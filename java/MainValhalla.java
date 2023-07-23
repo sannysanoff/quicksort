@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 
-inline class MyPoint {
+primitive class MyPoint {
     double x;
     double y;
 
