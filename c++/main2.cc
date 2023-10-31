@@ -8,6 +8,11 @@ using namespace std;
 
     struct P  {
         double x, y;
+	P(double x, double y) {
+		this->x = x;
+		this->y = y;
+	}
+	P() {}
     };
 
     bool operator <(const P&x, const P&y) {
@@ -56,7 +61,7 @@ using namespace std;
         vector<P> a(N);
 
         for (int i = 0; i < N; i++) {
-            a[i] = P { (double)rand()/RAND_MAX, (double)rand()/RAND_MAX };
+            a[i] = P ( (double)rand()/RAND_MAX, (double)rand()/RAND_MAX );
         }
 	    cout << "Sorting.." << endl;
         chrono::steady_clock::time_point begin = chrono::steady_clock::now();

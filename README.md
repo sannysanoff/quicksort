@@ -7,7 +7,19 @@ The initial point of this benchmark is to intentionally give all possible advant
 
 Benchmarking is done on the hardware du jour, by running program 2 times, for total 10 results and then choosing the best result.
 
+as run on Apple M2 on Macbook Air 15 (2023)
+
+
+
 as run on Intel i5-11300H on boost frequency (around 4.1-4.2 GHz) on Redmibook Pro 15
+
+tool | time taken |  conforms? 
+-----|------------|----------|------
+clang 15 arm native |4.271 sec | + 
+clang 15 arm ubuntu orbstack |4.317 sec | + 
+gcc 13 arm ubuntu orbstack |4.607 sec | + 
+gcc 13 x64 ubuntu orbstack |5.532 sec | + 
+clang 15 x64 ubuntu orbstack |5.649 sec | + 
 
 tool | time taken |  conforms? | comment
 -----|------------|----------|------
