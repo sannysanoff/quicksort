@@ -13,6 +13,7 @@ tool | time taken |  conforms?
 -----|------------|----------
 clang 15 arm native |4.271 sec | + 
 clang 15 arm ubuntu orbstack |4.317 sec | + 
+julia 1.9.3 native |4.476 sec | + 
 gcc 13 arm ubuntu orbstack |4.607 sec | + 
 gcc 13 x64 ubuntu orbstack |5.532 sec | + 
 clang 15 x64 ubuntu orbstack |5.649 sec | + 

@@ -33,8 +33,8 @@ end;
 function test()
 
     #v = Vector{P}(undef, 0)
-    v = Array{P,1}(undef, 500000)
-    for q = 1:500000
+    v = Array{P,1}(undef, 50000000)
+    for q = 1:50000000
         z = rand(Int, 2)
         v[q] = P(z[1], z[2])
      #   push!(v,P(z[1], z[2]))
