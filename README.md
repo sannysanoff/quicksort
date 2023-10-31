@@ -9,10 +9,6 @@ Benchmarking is done on the hardware du jour, by running program 2 times, for to
 
 as run on Apple M2 on Macbook Air 15 (2023)
 
-
-
-as run on Intel i5-11300H on boost frequency (around 4.1-4.2 GHz) on Redmibook Pro 15
-
 tool | time taken |  conforms? 
 -----|------------|----------
 clang 15 arm native |4.271 sec | + 
@@ -20,6 +16,9 @@ clang 15 arm ubuntu orbstack |4.317 sec | +
 gcc 13 arm ubuntu orbstack |4.607 sec | + 
 gcc 13 x64 ubuntu orbstack |5.532 sec | + 
 clang 15 x64 ubuntu orbstack |5.649 sec | + 
+
+
+as run on Intel i5-11300H on boost frequency (around 4.1-4.2 GHz) on Redmibook Pro 15
 
 tool | time taken |  conforms? | comment
 -----|------------|----------|------
@@ -29,6 +28,7 @@ gcc 11.2 |4.927 sec | + |..
 go1.18.2 |5.162 sec | + | ..
 jdk15.0.2 |6.146 sec |   | non-idiomatic coding
 jdk15.0.2 |28+ sec | +  | idiomatic coding, indirect access
+
 
 as run on AMD Ryzen 3900X cpu with default cooler
 
@@ -41,6 +41,7 @@ java-graaalvm-ee-packed | 5.660 sec |  | this has memory layout like in C, but n
 go1.14.2 |5.89 | + | 
 java-graaalvm-ce-packed | 6.155 sec |  | this has memory layout like in C, but non-idiomatic coding
 java-graaalvm-ce-onheap | 20.4 sec | + | this has different memory layout, but idiomatic approach
+
 
 as run on google cloud n1-standard-2 (2 vCPUs, 7.5 GB memory) skylake cpu
 
@@ -59,6 +60,7 @@ java-valhalla | 11.094 | + | Java with structs!
 clang+graalvm  |11.863 sec | + | LLVM bytecode interpreted by graalvm
 fbc-1.07.1 | 13.230 sec | + | Free Basic, credits to @mabu
 fpc-3.0.4 | 13.592 sec | + | Free Pascal
+
 
 as run on my notebook (Lenovo X1 Extreme i7-8850H); single user mode; single thread always caused 4-4.1 GHz.
 
