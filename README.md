@@ -17,6 +17,7 @@ julia 1.9.3 native |4.476 sec | +
 gcc 13 arm ubuntu orbstack |4.607 sec | + 
 gcc 13 x64 ubuntu orbstack |5.532 sec | + 
 clang 15 x64 ubuntu orbstack |5.649 sec | + 
+clang 15 arm native - economy cores only |7.375 sec | + 
 
 
 as run on Intel i5-11300H on boost frequency (around 4.1-4.2 GHz) on Redmibook Pro 15
