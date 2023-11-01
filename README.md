@@ -15,6 +15,7 @@ clang 15 arm native |4.271 sec | +
 clang 15 arm ubuntu orbstack |4.317 sec | + 
 julia 1.9.3 native |4.476 sec | + 
 gcc 13 arm ubuntu orbstack |4.607 sec | + 
+go 1.21.3 native |4.93 sec | + 
 java 17.0.8.1 native packed |5.203 sec | - 
 gcc 13 x64 ubuntu orbstack |5.532 sec | + 
 clang 15 x64 ubuntu orbstack |5.649 sec | + 
