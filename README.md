@@ -1,7 +1,7 @@
 quicksort 50 million double point2d
 ====================================
 
-quicksort implemented manually same algorithm on same data structures. Conformant are implementations in idiomatic code with same memory layout.
+quicksort implemented manually same algorithm on same data structures. Conformant are implementations in idiomatic code (tight struct arrays, or pointer arrays)
 
 The initial point of this benchmark is to intentionally give all possible advantage to C++ over Java, because Point2D cannot be layed out in canonic java without being indirectly addressed (i.e. only array of pointers).
 
