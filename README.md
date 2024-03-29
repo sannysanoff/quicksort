@@ -19,8 +19,11 @@ go 1.21.3 native |4.93 sec | +
 java 17.0.8.1 native packed |5.203 sec | - 
 gcc 13 x64 ubuntu orbstack |5.532 sec | + 
 clang 15 x64 ubuntu orbstack |5.649 sec | + 
+dart 3.3.0 arm native jit |6.140 sec | - non-idiomatic layout (two arrays)
+dart 3.3.0 arm native aot |6.5 sec | - non-idiomatic layout (two arrays)
 clang 15 arm native - economy cores only |7.375 sec | + 
 java 17.0.8.1 on heap |11.754 sec | + 
+dart 3.3.0 arm native jit |17 sec | + pointers array
 
 
 as run on Intel i5-11300H on boost frequency (around 4.1-4.2 GHz) on Redmibook Pro 15
